@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "azure-layout-analysis"
+version = "0.1.0"
+description = "Layout analysis to extract layout components from document pages"
+authors = ["Fernando Canizares Romero <fernando@simplekyc.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.4"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+azure-ai-formrecognizer = "^3.3.3"
+python-dotenv = "^1.0.1"
+python-multipart = "^0.0.16"
+aiohttp = "^3.10.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
